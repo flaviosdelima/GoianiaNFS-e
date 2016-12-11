@@ -1,0 +1,40 @@
+Neste primeiro teste de avaliação iremos abordar o desenvolvimento de um site “simples”,
+para emissão de NFS-e. Webservice Prefeitura de Goiânia ou sua preferência.
+
+1) Criar uma página HTML (Formulário) crie um formulário com estilo, onde serão
+inseridos os campos para emissão de uma Nota Fiscal de serviços, nos campos do
+formulário deverão conter:
+- Dados do destinatário: Nome da empresa PJ ou pessoa PF que irá ser emitida a
+nota.
+- Endereço, Inscrição estadual, Inscrição Municipal, descrição dos serviços,
+quantidade, valor e etc.
+- Podem ser enviados os dados por GET ou POST para emissão desta NFS-e.
+- Armazenar esta nota fiscal e seus dados do resultado em um banco MySql
+(Construa você mesmo o banco e a tabela)
+
+DOCUMENTAÇÃO DISPONÍVEL:
+https://docs.google.com/document/d/1B6L11ZGv2iXMfxCtIJxgzLaDCyeF-
+tCJ82ELysnJaTs/edit?pli=1
+//SALVAR EM UM BANCO (MySQL) as infrmações (simples desta nota):
+http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00200w0.asp?
+inscricao=1300687& (INSCRIÇÃO DO TOMADOR (CLIENTE))nota=370& (NUMERO DA NOTA FISCAL)
+verificador=MB94-C3ZA (VERIFICADOR DA NOTA FISCAL)
+http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00200w0.asp?inscricao=<
+Inscricao_municipal>&nota=<Numero_da_nota>&verificador=<Codigo_de_verifica
+cao>
+No link abaixo existe um XML exemplo básico de solicitação de GERAÇÃO
+SÍNCRONA DE UMA NFS-e (GerarNfse).
+https://drive.google.com/file/d/0B-E5V-
+N1GV7lSHZDQWJFd2NCSmc/edit?usp=sharing
+Endereço do Web Service:
+https://nfse.goiania.go.gov.br/ws/nfse.asmx
+Interfaces do Web Service (WSDL):
+https://nfse.goiania.go.gov.br/ws/nfse.asmx?wsdl
+Schema XSD:
+https://nfse.goiania.go.gov.br/xsd/nfse_gyn_v02.xsd
+Namespace do XSD:
+http://nfse.goiania.go.gov.br/xsd/nfse_gyn_v02.xsd
+Estou recebendo erros relativos ao protocolo SOAP. Como proceder?
+R: Consulte os endereços:
+https://nfse.goiania.go.gov.br/ws/nfse.asmx?op=GerarNfse
+https://nfse.goiania.go.gov.br/ws/nfse.asmx?op=ConsultarNfseRps]
