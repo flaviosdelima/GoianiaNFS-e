@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>NFS-e Goiânia - Flávio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Home</a></li>
             <li><a href="emitir-nota.html">Emitir Nota</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Consultar</a></li>
  
           </ul>
  
@@ -56,7 +56,7 @@
       <!-- Main component for a primary marketing message or call to action -->
       <div class="jumbotron">
         <h1>Exemplo NFS-e</h1>
-<form class="form-horizontal">
+<form class="form-horizontal" action="processa-nota.php" method="post">
 <fieldset>
 
 <!-- Form Name -->
@@ -66,8 +66,18 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Nome / Nome da empresa</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Nome / Nome da empresa" class="form-control input-md">
+  <input id="textinput" name="txtnomeempresa" type="text" placeholder="Nome / Nome da empresa" class="form-control input-md">
   <span class="help-block">Digite seu nome ou o Nome da empresa</span>  
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">CPF /CNPJ</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="txtcpfcnpj" type="text" placeholder="CPF /CNPJ" class="form-control input-md">
+  <span class="help-block">Digite seu CPF /CNPJ</span>  
   </div>
 </div>
 
@@ -75,7 +85,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">RG / Inscrição estadual</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="RG / Inscrição estadual" class="form-control input-md">
+  <input id="textinput" name="txtinscricaoe" type="text" placeholder="RG / Inscrição estadual" class="form-control input-md">
   <span class="help-block">Digite seu RG ou Digite a Inscrição estadual</span>  
   </div>
 </div>
@@ -84,7 +94,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Inscrição Municipal</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Inscrição Municipal" class="form-control input-md">
+  <input id="textinput" name="txtinscricaom" type="text" placeholder="Inscrição Municipal" class="form-control input-md">
   <span class="help-block">Caso seja empresa digite a inscrição municipal</span>  
   </div>
 </div>
@@ -93,13 +103,39 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="textinput">Endereço</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="Endereço" class="form-control input-md">
+  <input id="textinput" name="txtendereco" type="text" placeholder="Endereço" class="form-control input-md">
   <span class="help-block">Digite o Endereço</span>  
   </div>
 </div>
 
 
 </fieldset>
+
+
+<fieldset>
+    <button type="button" class="btn btn-info" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Novo Item
+  </button>
+  <p><br></p>
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Quantidade</td>
+            <td>Preço</td>
+        </tr>
+        
+        <tr>
+            <td><input  name="txtnome[]" type="text" placeholder="Nome" class="form-control input-md"></td>
+            <td><input  name="txtqtd[]" type="text" placeholder="Quantidade" class="form-control input-sm"></td>
+            <td><input  name="txtpreco[]" type="text" placeholder="Preço" class="form-control input-sm"></td>
+        </tr>        
+        
+    </table>
+      
+  
+</fieldset>
+<p><br></p>
+<input type="submit" class="btn btn-success" aria-haspopup="true" value="Gravar">
 </form>
 
       </div>

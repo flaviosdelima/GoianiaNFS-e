@@ -15,13 +15,19 @@ quantidade, valor e etc.
 DOCUMENTAÇÃO DISPONÍVEL:
 https://docs.google.com/document/d/1B6L11ZGv2iXMfxCtIJxgzLaDCyeF-
 tCJ82ELysnJaTs/edit?pli=1
+
 //SALVAR EM UM BANCO (MySQL) as infrmações (simples desta nota):
+
 http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00200w0.asp?
 inscricao=1300687& (INSCRIÇÃO DO TOMADOR (CLIENTE))nota=370& (NUMERO DA NOTA FISCAL)
 verificador=MB94-C3ZA (VERIFICADOR DA NOTA FISCAL)
+
+http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00200w0.asp?inscricao=1300687&nota=370&verificador=MB94-C3ZA
+
 http://www2.goiania.go.gov.br/sistemas/snfse/asp/snfse00200w0.asp?inscricao=<
 Inscricao_municipal>&nota=<Numero_da_nota>&verificador=<Codigo_de_verifica
 cao>
+
 No link abaixo existe um XML exemplo básico de solicitação de GERAÇÃO
 SÍNCRONA DE UMA NFS-e (GerarNfse).
 https://drive.google.com/file/d/0B-E5V-

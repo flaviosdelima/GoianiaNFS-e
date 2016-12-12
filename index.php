@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Fixed Top Navbar Example for Bootstrap</title>
+    <title>NFS-e Goiânia - Flávio</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,7 +43,7 @@
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.php">Home</a></li>
             <li><a href="emitir-nota.html">Emitir Nota</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#contact">Consultar</a></li>
  
           </ul>
  
