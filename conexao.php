@@ -18,7 +18,7 @@ class Conexao {
     public function select($tabela, $colunas = "*") {
         $sql = "SELECT $colunas FROM $tabela";
         $result = $this->executar($sql);
-        return $this->conn->fetch_assoc($result);
+        return $result->fetch_array();
     }    
     /**
      * Função para inserir dados na tabela

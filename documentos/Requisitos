@@ -44,3 +44,21 @@ Estou recebendo erros relativos ao protocolo SOAP. Como proceder?
 R: Consulte os endereços:
 https://nfse.goiania.go.gov.br/ws/nfse.asmx?op=GerarNfse
 https://nfse.goiania.go.gov.br/ws/nfse.asmx?op=ConsultarNfseRps]
+
+
+
+Modelo da consulta Por RPS:
+<?xml version="1.0"?>
+<ConsultarNfseRpsEnvio xmlns="http://nfse.goiania.go.gov.br/xsd/nfse_gyn_v02.xsd">
+  <IdentificacaoRps>
+    <Numero>1</Numero>
+    <Serie>UNICA</Serie>
+    <Tipo>1</Tipo>
+  </IdentificacaoRps>
+  <Prestador>
+    <CpfCnpj>
+      <Cpf>28222148168</Cpf>
+    </CpfCnpj>
+    <InscricaoMunicipal>1442678</InscricaoMunicipal>
+  </Prestador>
+</ConsultarNfseRpsEnvio>

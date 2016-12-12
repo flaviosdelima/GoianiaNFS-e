@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Dec 12, 2016 at 08:43 AM
+-- Generation Time: Dec 12, 2016 at 09:11 AM
 -- Server version: 5.5.49-0+deb8u1
 -- PHP Version: 5.6.24-0+deb8u1
 
@@ -27,12 +27,12 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE IF NOT EXISTS `tb_itens_nota` (
-  `id_itens_nota` int(11) NOT NULL,
+`id_itens_nota` int(11) NOT NULL,
   `id_nota` int(11) NOT NULL,
   `nome` varchar(255) DEFAULT NULL,
   `quantidade` int(11) DEFAULT NULL,
   `preco` decimal(12,2) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -47,7 +47,7 @@ CREATE TABLE IF NOT EXISTS `tb_notas` (
   `nome` varchar(255) DEFAULT NULL,
   `endereco` varchar(255) DEFAULT NULL,
   `imunicipal` varchar(45) DEFAULT NULL
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
 
 --
 -- Indexes for dumped tables
@@ -70,10 +70,15 @@ ALTER TABLE `tb_notas`
 --
 
 --
+-- AUTO_INCREMENT for table `tb_itens_nota`
+--
+ALTER TABLE `tb_itens_nota`
+MODIFY `id_itens_nota` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=7;
+--
 -- AUTO_INCREMENT for table `tb_notas`
 --
 ALTER TABLE `tb_notas`
-MODIFY `id_nota` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
+MODIFY `id_nota` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=13;
 --
 -- Constraints for dumped tables
 --
