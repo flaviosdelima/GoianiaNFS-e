@@ -1,35 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Fixed Top Navbar Example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+ 
+    <!-- Custom styles for this template -->
+    <link href="navbar-fixed-top.css" rel="stylesheet">
+ 
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">NFS-e Goiânia</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.php">NFS-e Goiânia</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.php">Home</a></li>
+            <li><a href="emitir-nota.html">Emitir Nota</a></li>
+            <li><a href="#contact">Contact</a></li>
+ 
+          </ul>
+ 
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <div class="container">
+
+      <!-- Main component for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <h1>Exemplo NFS-e</h1>
 <form class="form-horizontal">
 <fieldset>
 
 <!-- Form Name -->
-<legend>Form Name</legend>
+<legend></legend>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+  <label class="col-md-4 control-label" for="textinput">Nome / Nome da empresa</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  <span class="help-block">help</span>  
+  <input id="textinput" name="textinput" type="text" placeholder="Nome / Nome da empresa" class="form-control input-md">
+  <span class="help-block">Digite seu nome ou o Nome da empresa</span>  
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+  <label class="col-md-4 control-label" for="textinput">RG / Inscrição estadual</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  <span class="help-block">help</span>  
+  <input id="textinput" name="textinput" type="text" placeholder="RG / Inscrição estadual" class="form-control input-md">
+  <span class="help-block">Digite seu RG ou Digite a Inscrição estadual</span>  
   </div>
 </div>
 
 <!-- Text input-->
 <div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Text Input</label>  
+  <label class="col-md-4 control-label" for="textinput">Inscrição Municipal</label>  
   <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  <span class="help-block">help</span>  
+  <input id="textinput" name="textinput" type="text" placeholder="Inscrição Municipal" class="form-control input-md">
+  <span class="help-block">Caso seja empresa digite a inscrição municipal</span>  
   </div>
 </div>
+
+
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Endereço</label>  
+  <div class="col-md-4">
+  <input id="textinput" name="textinput" type="text" placeholder="Endereço" class="form-control input-md">
+  <span class="help-block">Digite o Endereço</span>  
+  </div>
+</div>
+
 
 </fieldset>
 </form>
+
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+ 
+  </body>
+</html>
